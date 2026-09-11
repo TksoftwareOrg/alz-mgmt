@@ -22,8 +22,8 @@ module "management_groups" {
   subscription_placement_destroy_behavior                          = module.config.outputs.management_group_settings.subscription_placement_destroy_behavior
   subscription_placement_destroy_custom_target_management_group_id = module.config.outputs.management_group_settings.subscription_placement_destroy_custom_target_management_group_id
   resource_types                                                   = module.config.outputs.management_group_settings.resource_types
-  policy_assignments_dependencies                                  = local.management_group_dependencies
-  policy_role_assignments_dependencies                             = local.management_group_dependencies
+  # policy_assignments_dependencies                                  = local.management_group_dependencies
+  # policy_role_assignments_dependencies                             = local.management_group_dependencies
   telemetry_additional_content                                     = var.telemetry_additional_content
 }
 
