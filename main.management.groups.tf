@@ -6,8 +6,8 @@ module "management_groups" {
   architecture_name                                                = module.config.outputs.management_group_settings.architecture_name
   parent_resource_id                                               = module.config.outputs.management_group_settings.parent_resource_id
   location                                                         = module.config.outputs.management_group_settings.location
-  policy_default_values                                            = local.policy_default_values
-  policy_assignments_to_modify                                     = local.policy_assignments_to_modify
+  # policy_default_values                                            = local.policy_default_values
+  # policy_assignments_to_modify                                     = local.policy_assignments_to_modify
   enable_telemetry                                                 = var.enable_telemetry
   management_group_hierarchy_settings                              = module.config.outputs.management_group_settings.management_group_hierarchy_settings
   retries                                                          = module.config.outputs.management_group_settings.retries
